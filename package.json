@@ -1,0 +1,25 @@
+{
+  "name": "server-health-check",
+  "version": "1.0.0",
+  "description": "Server-Health-Check",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HIT-N-RUN/server-health-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HIT-N-RUN/server-health-check/issues"
+  },
+  "homepage": "https://github.com/HIT-N-RUN/server-health-check#readme",
+  "dependencies": {
+    "is-port-reachable": "^4.0.0",
+    "lowdb": "^5.0.5",
+    "nedb": "^1.8.0"
+  },
+  "type": "module"
+}
