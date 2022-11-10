@@ -1,0 +1,12 @@
+{
+    "targets": [
+        {
+            "host": "localhost",
+            "name": "DigitalPlatform",
+            "port": 80,
+            "AED": "net start servicename",
+            "cwd": "path/to/project"
+        }
+    ],
+    "intervalDelay": 5000
+}
