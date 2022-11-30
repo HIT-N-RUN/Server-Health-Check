@@ -41,20 +41,20 @@ const check = async () => {
                 AED_Status = 'fail';
             }
         }
-        const row = {
-            date: `${getCurrentTimeStamp()}`,
-            status: resStr,
-            url: `${host}:${port}`,
-            name: targets[i].name,
-            AED_Status: AED_Status
-        }
-        db.insert(row, function(err, newRow) {
-            if (err) {
-                throw new Error('db insert Error', JSON.stringify(newRow));
-            }
-        });
+        // const row = {
+        //     date: `${getCurrentTimeStamp()}`,
+        //     status: resStr,
+        //     url: `${host}:${port}`,
+        //     name: targets[i].name,
+        //     AED_Status: AED_Status
+        // }
+        // db.insert(row, function(err, newRow) {
+        //     if (err) {
+        //         throw new Error('db insert Error', JSON.stringify(newRow));
+        //     }
+        // });
         
-        // console.log(`index(${i + 1}): ${targets[i].name}(${host}:${port}) status is ${resStr}!`);
+        console.log(`index(${i + 1}): ${targets[i].name}(${host}:${port}) status is ${resStr}!`);
     }
 
     console.log('check finish');
